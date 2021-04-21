@@ -61,7 +61,7 @@ window::window(int width, int height, event_sink<window_event_dispatcher>& windo
     width_(width),
     height_(height)
 {
-  the_window_ = glfwCreateWindow(width, height, "Wizualizacja algorytmow grafowych", nullptr, nullptr);
+  the_window_ = glfwCreateWindow(width, height, "Visualisation of graph alogirthms", nullptr, nullptr);
   glfwMakeContextCurrent(the_window_);
 
   glfwSetInputMode(the_window_, GLFW_STICKY_KEYS, GL_TRUE);
